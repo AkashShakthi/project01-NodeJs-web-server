@@ -9,4 +9,8 @@ module.exports = function(app){
     app.get('/image',(req,res)=>{
         res.sendFile(path.join(__dirname,"../public/157076.jpg"));
     });
+
+    app.get('/test',(req,res)=>{
+        res.sendFile(path.join(__dirname,"../public/index.html"));
+    });
 }
